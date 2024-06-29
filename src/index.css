@@ -73,7 +73,7 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 header a:hover {
@@ -211,7 +211,7 @@ footer .container {
 }
 
 /* Desktop styles */
-@media (min-width: 720px) {
+@media (min-width: 700px) {
     header {
         position: fixed;
         width: 100%;
