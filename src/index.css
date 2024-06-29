@@ -1,0 +1,357 @@
+/* General styles for all devices */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 3.2em;}
+p {font-size: 1.25em;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.668);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.843);
+    color: white;
+    background-color: rgb(96,133,246);
+}
+
+button:hover {  
+    background-color: rgb(22, 160, 252)
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: rgb(96,133,246);
+    margin-right: 10px;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 90px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245);
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+header a:hover {
+    color: rgb(27, 158, 245);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.721),
+        rgba(0, 0, 0, 0.72)
+    ), url("img/heroagua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+.titulo-banner{
+    text-align: center;
+}
+#quienes-somos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Delivery {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#Delivery .container {
+    padding: 150px 12px;
+    font-weight: 700;
+}
+
+#Delivery h2 {
+    text-align: center;
+}
+
+#Delivery p {
+    text-align: center;
+}
+
+#Delivery i {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+#Contacto {
+    background-color: rgb(19, 29, 60);
+    color: white;
+    padding-bottom: 50px;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+#Contacto .container a:hover {
+    transform: scale(1.2);
+}
+
+
+#Contacto h2 {
+    text-align: center;
+}
+
+#Contacto a {
+    color: white;
+    text-decoration: none;
+}
+
+.texto-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.brands-container i{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+
+
+
+
+footer {
+    height: 70px;
+    border-top: 1px solid rgba(84, 84, 84, 0.689);
+    background-color: rgb(19, 29, 60);
+    
+}
+
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+}
+
+footer .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Mobile styles */
+#quienes-somos .image-container {
+    display: none; /* Ocultar imágenes del slider en móvil */
+}
+
+/* Desktop styles */
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        align-items: left;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    #hero .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    #hero h1 {
+        padding-top: 100px;
+    }
+
+    #hero .texto {
+        width: 50%;
+        text-align: initial;
+        max-width: 1000px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero .image-container {
+        background-image: url("img/bidonx3.png");
+        background-size: cover;
+        background-position: center center;
+        width: 800px;
+        height: 600px;
+    }
+
+    #quienes-somos .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #quienes-somos .texto {
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        padding: 0px 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos .image-container {
+        display: block; /* Mostrar imágenes del slider en escritorio */
+        width: 700px;
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;
+        border-radius: 20%;
+    }
+
+    #quienes-somos .image-container ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite ease-in-out;
+    }
+
+    #quienes-somos .image-container li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    #quienes-somos .image-container img {
+        width: 100%;
+    }
+
+    @keyframes slide {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+
+        50% { margin-left: -200%; }
+        70% { margin-left: -200%; }
+
+        75% { margin-left: -300%; }
+        100% { margin-left: -300%; }
+    }
+
+    #Delivery .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Delivery .texto {
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    #Delivery i {
+        text-align: left;
+    }
+
+    #Delivery h2 {
+        display: flex;
+        justify-content: left;
+        font-size: 3em;
+    }
+
+    #Delivery .image-container {
+        background-image: url("img/bidon.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 200px;
+    }
+
+    
+}
