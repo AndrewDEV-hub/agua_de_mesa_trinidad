@@ -13,7 +13,7 @@ body {
 
 h1 {font-size: 3.5em;}
 h2 {font-size: 3.2em;}
-p {font-size: 1.25em;}
+p {font-size: 2em;}
 
 button {
     font-size: 1.5em;
@@ -31,12 +31,12 @@ button:hover {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
 }
 
 .color-acento {
-    color: rgb(96,133,246);
+    color:black;
     margin-right: 10px;
 }
 
@@ -101,6 +101,10 @@ header a:hover {
 #hero h1 {
     color: white;
 }
+#hero p{
+    text-align: initial;
+}
+
 .titulo-banner{
     text-align: center;
 }
@@ -110,21 +114,26 @@ header a:hover {
 }
 
 #Delivery {
-    background-color: rgb(30, 30, 30);
+    background: rgb(88,80,223);
+    background: linear-gradient(90deg, rgba(88,80,223,1) 0%, rgba(70,116,172,1) 14%, rgba(67,159,179,0.9788961038961039)100%);
     color: white;
 }
 
 #Delivery .container {
-    padding: 150px 12px;
+    padding: 100px 12px;
     font-weight: 700;
 }
 
 #Delivery h2 {
     text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 #Delivery p {
     text-align: center;
+    margin: 0;
+    
 }
 
 #Delivery i {
@@ -136,9 +145,20 @@ header a:hover {
 }
 
 #Contacto {
-    background-color: rgb(19, 29, 60);
-    color: white;
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("img/vecteezy_blue-water-web-banner-with-copy-space-generative-ai_30205130.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    
+    
 }
 
 .brands-container {
@@ -158,7 +178,7 @@ header a:hover {
 }
 
 #Contacto a {
-    color: white;
+    
     text-decoration: none;
 }
 
@@ -168,6 +188,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .brands-container i{
@@ -179,6 +200,11 @@ header a:hover {
     font-size: 4rem;
 }
 
+#Contacto .stock{
+    font-size: .5em;
+    color: rgba(243, 22, 22, 0.103);
+    
+}
 
 
 
@@ -186,8 +212,9 @@ header a:hover {
 footer {
     height: 70px;
     border-top: 1px solid rgba(84, 84, 84, 0.689);
-    background-color: rgb(19, 29, 60);
-    
+    background: rgb(88,80,223);
+    background: linear-gradient(90deg, rgba(88,80,223,1) 0%, rgba(70,116,172,1) 14%, rgba(67,159,179,0.9788961038961039)100%);
+
 }
 
 
@@ -237,7 +264,6 @@ footer .container {
     #hero .container {
         display: flex;
         justify-content: space-between;
-        margin: 0;
         position: relative;
         z-index: 1;
     }
@@ -250,7 +276,7 @@ footer .container {
         width: 50%;
         text-align: initial;
         max-width: 1000px;
-        padding: 0px 30px;
+        padding-right: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -260,9 +286,10 @@ footer .container {
     #hero .image-container {
         background-image: url("img/bidonx3.png");
         background-size: cover;
-        background-position: center center;
-        width: 800px;
-        height: 600px;
+        background-position: center;
+        width: 740px;
+        height: 580px;
+        
     }
 
     #quienes-somos .container {
@@ -283,10 +310,10 @@ footer .container {
     #quienes-somos .image-container {
         display: block; /* Mostrar imágenes del slider en escritorio */
         width: 700px;
-        height: auto;
+        height: 400px;
         margin: 50px auto 0;
         overflow: hidden;
-        border-radius: 20%;
+        border-radius: 15px;
     }
 
     #quienes-somos .image-container ul {
@@ -333,6 +360,7 @@ footer .container {
         display: flex;
         flex-direction: column;
         justify-content: left;
+        
     }
 
     #Delivery i {
@@ -346,11 +374,13 @@ footer .container {
     }
 
     #Delivery .image-container {
-        background-image: url("img/bidon.png");
+        background-image: url("img/camion\ delivery.png");
         background-size: cover;
         background-position: center center;
-        height: 500px;
-        width: 200px;
+        justify-content: end;
+        border-radius: 15px;
+        height: 400px;
+        width: 400px;
     }
 
     
