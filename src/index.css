@@ -287,7 +287,7 @@ footer .container {
         background-size: contain; /* Cambiar a 'contain' para que la imagen se ajuste completamente */
         background-repeat: no-repeat; /* Asegurarse de que la imagen no se repita */
         background-position: center;
-        width: 600px;
+        width: 601px;
         height: 400px;
       }
 
