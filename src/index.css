@@ -86,7 +86,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 115vh;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -269,14 +269,13 @@ footer .container {
     }
 
     #hero h1 {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     #hero .texto {
         width: 50%;
         text-align: initial;
         max-width: 1000px;
-        padding-right: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -288,7 +287,7 @@ footer .container {
         background-size: cover;
         background-position: center;
         width: 740px;
-        height: 580px;
+        height: 550px;
         
     }
 
