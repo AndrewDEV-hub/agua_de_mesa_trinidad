@@ -284,12 +284,12 @@ footer .container {
 
     #hero .image-container {
         background-image: url("img/bidonx3.png");
-        background-size: cover;
+        background-size: contain; /* Cambiar a 'contain' para que la imagen se ajuste completamente */
+        background-repeat: no-repeat; /* Asegurarse de que la imagen no se repita */
         background-position: center;
-        width: 740px;
-        height: 550px;
-        
-    }
+        width: 600px;
+        height: 400px;
+      }
 
     #quienes-somos .container {
         display: flex;
